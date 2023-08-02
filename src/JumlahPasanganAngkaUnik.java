@@ -20,7 +20,7 @@ public class JumlahPasanganAngkaUnik {
                     System.out.print("Masukkan elemen array (" + panjangArray + " angka dipisahkan spasi) : ");
                     String inputElemen = scanner.nextLine();
 
-                    // Memisahkan elemen-elemen array dari string inputElemen
+                    // Memisahkan elemen-elemen array dari string inputElemen juga menghilangkan spasi agar tidak terbaca
                     String[] elemenArrayString = inputElemen.trim().replaceAll("\\s+", " ").split(" ");
 
                     // Validasi agar jumlah elemen sesuai dengan panjang array
@@ -39,7 +39,7 @@ public class JumlahPasanganAngkaUnik {
                         }
 
                         if (valid) {
-                            // Konversi elemenArrayString menjadi array int
+                            // Konversi elemenArrayString menjadi array int agar bisa di sorting
                             int[] elemenArray = new int[panjangArray];
                             for (int indeksElemenArray = 0; indeksElemenArray < panjangArray; indeksElemenArray++) {
                                 elemenArray[indeksElemenArray] = Integer.parseInt(elemenArrayString[indeksElemenArray]);
@@ -52,6 +52,7 @@ public class JumlahPasanganAngkaUnik {
                             // Cek apakah data yang sudah diurutkan sama atau tidak secara berurutan
                             for (int indeksPasanganUnik = 0; indeksPasanganUnik < elemenArray.length - 1; indeksPasanganUnik++) {
                                 if (elemenArray[indeksPasanganUnik] != elemenArray[indeksPasanganUnik + 1]) {
+                                    // Bila data tidak sama, maka akan dijumlahkan ada berapa pasangan uniknya
                                     jumlahPasanganUnik++;
                                 }
                             }
