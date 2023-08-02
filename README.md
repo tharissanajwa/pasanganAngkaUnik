@@ -1,4 +1,4 @@
-#Pertanyaan Soal
+# Pertanyaan Soal
 Assignment: Mencari Jumlah Pasangan Angka Unik dalam Array
 
 Buatlah sebuah program java yang menerima input sebuah array bilangan bulat. Program harus mencari dan menghitung jumlah pasangan angka unik yang dapat dibentuk dari elemen-elemen array tersebut.
@@ -20,7 +20,7 @@ Bonus:
 
 - Buat error handling untuk memberikan informasi apabila jumlah elemen lebih banyak daripada panjang array yang sudah ditentukan
 
-#Contoh Input dan Output
+# Contoh Input dan Output
 - Input:
 
 Masukkan panjang array: 6
